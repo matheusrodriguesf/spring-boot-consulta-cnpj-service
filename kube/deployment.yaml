@@ -1,0 +1,21 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: consulta-cnpj-service
+  labels:
+    app: consulta-cnpj-service
+spec:
+  replicas: 2
+  selector:
+    matchLabels:
+      app: consulta-cnpj-service
+  template:
+    metadata:
+      labels:
+        app: consulta-cnpj-service
+    spec:
+      containers:
+      - name: consulta-cnpj-service
+        image: matheusrfa/consulta-cnpj-service:latest
+        ports:
+        - containerPort: 8080
