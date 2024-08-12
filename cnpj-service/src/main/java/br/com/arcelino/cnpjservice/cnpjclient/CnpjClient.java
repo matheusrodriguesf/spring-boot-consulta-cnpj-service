@@ -1,8 +1,8 @@
-package br.com.arcelino.cnpjservice.cnpjClient;
+package br.com.arcelino.cnpjservice.cnpjclient;
 
 import org.springframework.stereotype.Service;
 
-import br.com.arcelino.cnpjservice.cnpjClient.client.CnpjRequest;
+import br.com.arcelino.cnpjservice.cnpjclient.client.CnpjRequest;
 
 @Service
 public record CnpjClient(CnpjRequest cnpjRequest) {

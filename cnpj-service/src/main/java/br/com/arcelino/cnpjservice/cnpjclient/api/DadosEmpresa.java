@@ -1,4 +1,4 @@
-package br.com.arcelino.cnpjservice.cnpjClient.api;
+package br.com.arcelino.cnpjservice.cnpjclient.api;
 
 import com.fasterxml.jackson.annotation.JsonProperty;
 
